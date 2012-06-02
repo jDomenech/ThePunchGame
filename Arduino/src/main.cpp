@@ -1,5 +1,4 @@
 
-
 #include <arduino.h>
 #include "bluetoothModule/AtWrapper.h"
 #include "accelerometer/ACC.h"
@@ -17,13 +16,13 @@ void setup(){
 	Serial.begin(115200);
 	acc.calibrate();
 	//Blocks until new conection request
-	/*if(wp.connectd(true)){
+	if(wp.connectd(true)){
 		//Blink led showing conection ok
 		pinMode(led, OUTPUT);
 		digitalWrite(led,HIGH);
 		delay(1000);
 		digitalWrite(led,LOW);
-	}*/
+	}
 }
 
 void loop(){
